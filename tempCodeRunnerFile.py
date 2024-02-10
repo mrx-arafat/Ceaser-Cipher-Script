@@ -1,1 +1,0 @@
-= ord('A') if char.isu
