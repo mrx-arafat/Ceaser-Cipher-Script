@@ -23,14 +23,14 @@ def caesar_cipher(text, shift):
 
   return new_text
 
-# Example usage
-message = "Hello, world!"
-shift_value = 3
+# User input
+message = input("Enter the message: ")
+shift_value = int(input("Enter shift value (1-25): "))
 
+# Encryption
 encrypted_message = caesar_cipher(message, shift_value)
 print(f"Encrypted message: {encrypted_message}")
 
+# Decryption
 decrypted_message = caesar_cipher(encrypted_message, -shift_value)
 print(f"Decrypted message: {decrypted_message}")
-
-
